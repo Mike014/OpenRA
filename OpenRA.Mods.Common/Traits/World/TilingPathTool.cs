@@ -33,6 +33,34 @@ namespace OpenRA.Mods.Common.Traits
 		[Desc("The preferred defaults for the end type.")]
 		public readonly ImmutableArray<string> DefaultEnd = [];
 
+		// This is purely of interest to the linter.
+		[FluentReference]
+		public readonly ImmutableArray<string> SegmentFluentReference =
+		[
+			"tiling-path-segment-beach",
+			"tiling-path-segment-clear",
+			"tiling-path-segment-cliff",
+			"tiling-path-segment-cliff-maybecorner",
+			"tiling-path-segment-dune",
+			"tiling-path-segment-iceshore",
+			"tiling-path-segment-river",
+			"tiling-path-segment-road",
+			"tiling-path-segment-road-in",
+			"tiling-path-segment-road-main",
+			"tiling-path-segment-road-out",
+			"tiling-path-segment-rock",
+			"tiling-path-segment-rockrockcliff",
+			"tiling-path-segment-rocksandcliff",
+			"tiling-path-segment-rocksmooth",
+			"tiling-path-segment-sand",
+			"tiling-path-segment-sandplatform",
+			"tiling-path-segment-sandrockcliff",
+			"tiling-path-segment-sandsandcliff",
+			"tiling-path-segment-shore",
+			"tiling-path-segment-watercliff",
+			"tiling-path-segment-watercliff-maybecorner",
+		];
+
 		public override object Create(ActorInitializer init)
 		{
 			return new TilingPathTool(init.Self, this);
